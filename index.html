@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hypermart Checkout System</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hypermart Checkout System</h1>
+      <p>Real-time queue management system</p>
+      <div class="input-container">
+        <input
+          type="number"
+          id="itemCount"
+          placeholder="Enter number of items"
+          min="1"
+        />
+        <button onclick="checkoutItems()">Checkout Items</button>
+      </div>
+      <div class="checkout-counters">
+        <div class="counter" id="counter1">
+          <div class="counter-head">
+            <h2>Counter 1</h2>
+            <p>
+              <i class="fas fa-users"></i
+              ><span id="counter1-customers">0 customers</span>
+            </p>
+          </div>
+          <div class="list-items">
+            <ul id="counter1-list"></ul>
+          </div>
+          <p>Total Items: <span id="counter1-total">0</span></p>
+        </div>
+        <div class="counter" id="counter2">
+          <div class="counter-head">
+            <h2>Counter 2</h2>
+            <p>
+              <i class="fas fa-users"></i
+              ><span id="counter2-customers">0 customers</span>
+            </p>
+          </div>
+          <div class="list-items">
+            <ul id="counter2-list"></ul>
+          </div>
+          <p>Total Items: <span id="counter2-total">0</span></p>
+        </div>
+        <div class="counter" id="counter3">
+          <div class="counter-head">
+            <h2>Counter 3</h2>
+            <p>
+              <i class="fas fa-users"></i
+              ><span id="counter3-customers">0 customers</span>
+            </p>
+          </div>
+          <div class="list-items">
+            <ul id="counter3-list"></ul>
+          </div>
+          <p>Total Items: <span id="counter3-total">0</span></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
